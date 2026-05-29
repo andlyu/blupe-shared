@@ -139,6 +139,25 @@ simply hide. Sharper signal means sharper hypotheses about what to try next: whi
 collect, which recipe to tune, which architectural change is worth the compute. Everything
 we build serves that one outcome.
 
+## Second area: data quality analysis
+
+The other major area we want to help with is **figuring out how good a dataset actually
+is.**
+
+There are many egocentric and teleop data-collection companies — the barriers to entry are
+low, so the supply of data is large. Labs would like to use and scale this data, but they
+**don't know how good it is.** There are proxy measures, but in the end the only way to
+make a well-informed decision is to **train on the data and evaluate the resulting policy.**
+
+That's painful for two reasons:
+- **A) Retraining costs** — every dataset you want to assess means another training run.
+- **B) Eval costs** — and then you have to evaluate the result, which is exactly the
+  expensive, human-in-the-loop bottleneck above.
+
+**We want to help labs decrease the eval cost side of this.** Cheaper, higher-volume evals
+make it practical to actually test datasets against real policy performance, instead of
+guessing from proxies — so labs can decide what data is worth buying and scaling.
+
 ## Biggest challenges
 
 _To be filled in based on actual customer conversations, not speculation._
