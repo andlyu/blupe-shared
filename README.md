@@ -30,7 +30,8 @@ teams reach for technicians. **This is where we come in.**
 
 How far testing can move into sim is unclear, but labs test heavily in the real world
 before deployment today. So the **short-term solution is remote teleop**: instead of a
-technician beside the robot, it's driven remotely to reset between rollouts.
+technician beside the robot, the robot itself is driven remotely to reset the environment
+between rollouts.
 
 It's not one or the other — what we're building is a **combination of simulation and remote
 teleop**, not just a teleop service.
