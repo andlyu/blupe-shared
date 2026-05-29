@@ -29,8 +29,7 @@ teams reach for technicians. **This is where we come in.**
   deployment.**
 
 How far testing can move into sim is unclear, but labs test heavily in the real world
-before deployment today. We believe evals will be **first run in simulation as a safety
-catch, then more rigorously tested in the real world.**
+before deployment today.
 
 Where we push depends on what we learn. If simulation covers a strong majority of edge
 cases, we push on **making it easy to reproduce environments in simulation.** If not, we
