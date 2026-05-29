@@ -31,7 +31,8 @@ push on **making it easy to reset environments by remotely controlling the robot
 
 An insight underwriting the teleop front: **remote teleop is better than most people
 realize.** It's more capable today than the conventional view assumes, which makes the
-real-world reset loop more tractable than it looks.
+real-world reset loop more tractable than it looks. A well-thought-through solution is more
+capable than what robotics companies can put together in a few days.
 
 ## Where it matters most today
 
