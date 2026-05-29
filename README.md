@@ -1,7 +1,6 @@
 # BluPe — Shared Ideas
 
-A living doc for the high-level ideas we're working with at BluPe. Edit it, disagree in
-line, commit. History is the record of who changed what and why.
+A living doc for BluPe's high-level ideas. Edit it, disagree in line, commit.
 
 ---
 
