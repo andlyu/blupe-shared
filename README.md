@@ -32,6 +32,10 @@ How far testing can move into sim is unclear, but labs test heavily in the real 
 before deployment today. We believe evals will be **first run in simulation as a safety
 catch, then more rigorously tested in the real world.**
 
+Where we push depends on what we learn. If simulation covers a strong majority of edge
+cases, we push on **making it easy to reproduce environments in simulation.** If not, we
+push on **making it easy to reset environments by remotely controlling the robot.**
+
 ## Why it matters
 
 Evals are the feedback loop for the whole training stack. At 10 rollouts a 5-point gain is
