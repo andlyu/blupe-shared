@@ -29,14 +29,8 @@ teams reach for technicians. **This is where we come in.**
   deployment.**
 
 How far testing can move into sim is unclear, but labs test heavily in the real world
-before deployment today. So the **short-term solution is remote teleop**: instead of a
-technician beside the robot, the robot itself is driven remotely to reset the environment
-between rollouts.
-
-It's a **combination of simulation and remote teleop**, not just a teleop service. Where we
-invest follows what we learn: the more that proves doable in sim, the harder we push on
-reproducing live setups there; the more we hit sim's limits, the harder we push on physical
-resets via teleop.
+before deployment today. We believe evals will be **first run in simulation as a safety
+catch, then more rigorously tested in the real world.**
 
 ## Why it matters
 
