@@ -15,12 +15,6 @@ teams have **researchers** doing this; larger teams closer to production have
 evals a team runs and pushes them toward small eval sets that don't stress the policy. We
 want to take the person out of the loop.
 
-## How teams get here
-
-Someone scraps a policy together and it works → they chase a customer → they hit edge cases
-→ they fall into an improve/test/improve/test cycle. That's where evals start to matter and
-teams reach for technicians. **This is where we come in.**
-
 ## The approach: simulation + remote teleop
 
 - **Simulation** to continuously validate the model's performance — rough signal that
