@@ -1,6 +1,6 @@
 # BluPe — Shared Ideas
 
-A living doc for BluPe's high-level ideas. Edit it, disagree in line, commit.
+A living doc for the high-level thesis we're working on at BluPe (Max 500 words).
 
 ---
 
