@@ -29,16 +29,6 @@ Where we push depends on what we learn. If simulation covers a strong majority o
 cases, we push on **making it easy to reproduce environments in simulation.** If not, we
 push on **making it easy to reset environments by remotely controlling the robot.**
 
-## Why it matters
-
-Evals are the feedback loop for the whole training stack. At 10 rollouts a 5-point gain is
-noise; at 100 you can see it. **Bigger, faster, less noisy evals let teams detect smaller
-deltas and converge faster.** That's the bet: more samples → better insight → better
-ideation.
-
-Looking at the loop, evals are **one of the last physical steps that can't yet be automated
-in software.** Closing that loop lets robotics iterate far faster.
-
 ## Where it matters most today
 
 **A) The improve/test cycle.** Someone scraps a policy together and it works → they chase a
