@@ -39,12 +39,16 @@ ideation.
 Looking at the loop, evals are **one of the last physical steps that can't yet be automated
 in software.** Closing that loop lets robotics iterate far faster.
 
-## Second area: data quality analysis
+## Where it matters most today
 
-Egocentric/teleop data companies are everywhere; labs want to scale this data but don't
-know how good it is. Proxies aside, the real test is to **train on it and evaluate the
-policy** — painful because of (A) retraining cost and (B) eval cost. **We cut the eval
-cost**, so dataset decisions rest on real performance, not guesses.
+**A) The improve/test cycle.** Someone scraps a policy together and it works → they chase a
+customer → they hit edge cases → they fall into an improve/test/improve/test cycle. That's
+where evals start to matter and teams reach for technicians. **This is where we come in.**
+
+**B) Data quality analysis.** Egocentric/teleop data companies are everywhere; labs want to
+scale this data but don't know how good it is. Proxies aside, the real test is to **train on
+it and evaluate the policy** — painful because of (1) retraining cost and (2) eval cost.
+**We cut the eval cost**, so dataset decisions rest on real performance, not guesses.
 
 ## Open challenges
 
