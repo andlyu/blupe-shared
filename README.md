@@ -23,7 +23,8 @@ teams reach for technicians. **This is where we come in.**
 
 ## The approach: simulation + remote teleop
 
-- **Simulation** to continuously track the policy as it trains — cheap, fast signal.
+- **Simulation** to continuously validate the model's performance — rough signal that
+  might not be 100% accurate, but cheap and always-on.
 - **Real-world testing** once a policy is good enough, then **continuous testing in
   deployment.**
 
