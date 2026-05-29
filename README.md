@@ -33,20 +33,10 @@ before deployment today. So the **short-term solution is remote teleop**: instea
 technician beside the robot, the robot itself is driven remotely to reset the environment
 between rollouts.
 
-It's a **combination of simulation and remote teleop**, not just a teleop service.
-
-## The eval flavor
-
-Across both sim and teleop, the deliverable is a **research artifact, not a log of operator
-time** — numbers, comparisons, and diagnostics that help the team understand how their
-policy actually behaved:
-
-1. **Report numbers** — success rate, per-task breakdowns, variance, regressions vs. prior
-   checkpoints. A scorecard, not a video archive.
-2. **Help researchers understand the policy** — surface and cluster failure modes, flag
-   regressions. A debugging tool, not just a grade.
-3. **Run designed eval sets** — deliberately vary lighting, distractors, and initial
-   conditions so the numbers say something about generalization.
+It's a **combination of simulation and remote teleop**, not just a teleop service. Where we
+invest follows what we learn: the more that proves doable in sim, the harder we push on
+reproducing live setups there; the more we hit sim's limits, the harder we push on physical
+resets via teleop.
 
 ## Why it matters
 
