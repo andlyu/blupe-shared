@@ -46,6 +46,22 @@ What we own vs. what the lab owns:
   scheduling, diagnostics, and the dashboards / tooling our operators and the researchers
   use.
 
+## How teams get here
+
+The need for better evals shows up at a predictable point in a team's life:
+
+1. **Getting started.** When someone first gets into robotics, they don't think much about
+   evals. They scrap something together and see if it works.
+2. **First customer.** If it works, they try to convince a customer to buy — and then
+   realize there are edge cases the demo never hit.
+3. **The improve/test cycle.** So they improve, test, improve, test, over and over. This is
+   where evals start to matter, and where they start looking for ways to run more of them:
+   either testing in simulation or hiring technicians to run testing in the real world.
+
+**This is where we come in — we simplify that job.** When a team hits the improve/test
+cycle and the real-world testing is the thing slowing them down, we take the physical
+person out of the loop.
+
 ## How we see the loop getting automated: simulation + remote teleop
 
 We expect taking the person out of the loop to come from a **mix of simulation and remote
