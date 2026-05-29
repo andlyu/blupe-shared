@@ -42,6 +42,10 @@ scale this data but don't know how good it is. Proxies aside, the real test is t
 it and evaluate the policy** — painful because of (1) retraining cost and (2) eval cost.
 **We cut the eval cost**, so dataset decisions rest on real performance, not guesses.
 
+## What we're not doing
+
+Individual researchers often run ~30 rollouts for a paper. We do not aim to address that.
+
 ## Open challenges
 
 _To be filled in from real customer conversations, not speculation._
