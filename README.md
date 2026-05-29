@@ -29,6 +29,10 @@ Where we push depends on what we learn. If simulation covers a strong majority o
 cases, we push on **making it easy to reproduce environments in simulation.** If not, we
 push on **making it easy to reset environments by remotely controlling the robot.**
 
+An insight underwriting the teleop front: **remote teleop is better than most people
+realize.** It's more capable today than the conventional view assumes, which makes the
+real-world reset loop more tractable than it looks.
+
 ## Where it matters most today
 
 **A) The improve/test cycle.** Someone scraps a policy together and it works → they chase a
