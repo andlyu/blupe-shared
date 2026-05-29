@@ -19,10 +19,15 @@ the team.
 Automate eval runs so people can run them overnight and get **10x more runs with more
 variation, without a lab person having to babysit them.**
 
-Today, every rollout costs a local human's attention — running the rollout, resetting the
-scene, watching for safety, scoring the outcome. That puts a hard ceiling on how many
-evals a lab can run, and pushes labs toward small, hand-picked eval sets that don't
-actually stress the policy.
+Today, most evals are done manually: a policy runs, and then the environment is reset, over
+and over. Who does that work depends on the team's stage. **Smaller labs and companies have
+researchers babysitting the rollouts** — the people building the policy are also the ones
+resetting the scene. **Larger labs and companies, closer to production, have technicians**
+doing it. Either way there's a physical person in the loop for every rollout.
+
+That puts a hard ceiling on how many evals a team can run, and pushes them toward small,
+hand-picked eval sets that don't actually stress the policy. **What we want is to take the
+physical person out of that loop.**
 
 The pitch in one line: **a remote teleop service, with an eval flavor.** Generic remote
 teleop would just drive the robot. We do that, but the deliverable is a research artifact,
@@ -41,8 +46,27 @@ What we own vs. what the lab owns:
   scheduling, diagnostics, and the dashboards / tooling our operators and the researchers
   use.
 
-**The eval flavor — what makes us not just teleop.** Three things we do that a generic
-teleop service wouldn't:
+## How we see the loop getting automated: simulation + remote teleop
+
+We expect taking the person out of the loop to come from a **mix of simulation and remote
+teleop**, used at different stages of the policy's life:
+
+- **Simulation** to continuously track the policy's improvement. Cheap, fast, always-on
+  signal as the policy trains.
+- **Real-world testing** once a policy is good enough — and then **continuous testing in
+  deployment** after that.
+
+How good simulation gets, and how much of testing can actually move into sim, is still
+unclear. What we do know: **labs today test heavily in the real world before deployment.**
+That's not going away soon.
+
+So the **short-term solution is remote teleop.** Instead of a technician sitting next to the
+robot, the robot is controlled remotely to reset the environment between rollouts. Same
+physical eval loop, minus the requirement that a person be physically present for it.
+
+## The eval flavor — what makes us not just teleop
+
+Three things we do that a generic teleop service wouldn't:
 1. **Report numbers.** Success rate, per-task breakdowns, variance, comparisons against the
    lab's previous checkpoints. The output is a scorecard, not a video archive.
 2. **Help researchers understand the policy.** Surface failure modes (e.g. "fails when the
