@@ -10,67 +10,26 @@ the team.
 
 ---
 
-## What BluPe is doing
+## Current ideas for what BluPe is
 
-Automate robot policy eval runs so teams can run them overnight and get **10x more
-rollouts with more variation, without a person having to babysit each one.**
+These are working ideas, not settled conclusions. They'll change as we learn.
 
-Today every rollout costs a local human's attention — running it, resetting the scene,
-watching for safety, scoring the outcome. That caps how many evals a team can run and
-pushes them toward small, hand-picked eval sets that don't really stress the policy.
+**Evals are a bottleneck for robotics.** Teams can't tell whether a change to their policy
+actually helped without good eval signal, and good eval signal is exactly what's hard to
+get. That bottleneck is what we're aiming to address.
 
-The one-liner: **a remote teleop service with an eval flavor.** Generic remote teleop
-just drives the robot. We do that, but the deliverable is a research artifact — numbers,
-comparisons, and diagnostics — not a log of operator time.
+**Evals have to be run in the real world.** A policy's real behavior shows up on real
+hardware, in real scenes, under real variation — not only in simulation. So the eval
+problem is fundamentally a physical-world problem.
 
-## Who owns what
-
-- **The team (customer) owns:** the robot, the workspace, the rig, the task definition,
-  the policy.
-- **We own:** rollout execution, environment resets, safety supervision, scoring,
-  scheduling, diagnostics, and the dashboards/tooling our operators and their researchers
-  use.
-
-They leave the rig on overnight; we run rollouts against it; they get back **scored,
-structured eval results** in the morning — not just video.
-
-## The eval flavor — what makes us not just teleop
-
-1. **Report numbers.** Success rate, per-task breakdowns, variance, comparisons against
-   previous checkpoints. The output is a scorecard, not a video archive.
-2. **Help researchers understand the policy.** Surface failure modes ("fails when the
-   target is left of center"), cluster similar failures, flag regressions vs. the last run.
-   The eval is a debugging tool, not just a grade.
-3. **Run designed eval sets, not arbitrary tasks.** Scenario sampling with coverage in
-   mind — vary lighting, distractors, initial conditions deliberately — so the numbers we
-   hand back are actually informative about generalization.
-
-## The thesis
-
-**Larger sample sizes give researchers better insights — and better insights lead to
-better ideation.** That's the whole bet. Researchers today iterate against eval sets too
-small to tell signal from noise. An order of magnitude more rollouts, across more
-variation, surfaces failure modes, regressions, and recipe wins that current eval volumes
-hide. Sharper signal means sharper hypotheses about what to try next — which data to
-collect, which recipe to tune, which architectural change is worth the compute.
-
-## Why it matters now
-
-- **Evals are the iteration bottleneck for the training stack.** Every data-mix decision,
-  recipe change, and architecture experiment gets graded against an eval. Small, slow, or
-  noisy evals mean teams iterate on muddy signal. This applies to every team training a
-  policy, not just teams approaching deployment.
-- **Small signals stay invisible without volume.** At 10 rollouts per task, a 5-point
-  improvement is indistinguishable from noise. At 100, you can see it. The team that
-  detects smaller deltas converges on the right recipe faster.
-- **The local-human-in-the-loop is the binding constraint.** Teams don't run small eval
-  sets because small is enough — they run small because a person has to be present for
-  every rollout. Remove that constraint and test volume goes up an order of magnitude.
+**Running evals in the real world is itself a perfect application for robotics.** Real-world
+evals mean executing rollouts, resetting scenes, and supervising safety over and over.
+That's repetitive physical work in a controlled setting — exactly the kind of thing
+robotics is good at. So we think the way to scale real-world robot evals is to bring
+robotics (and automation) to bear on running them.
 
 ## Open questions
 
 _Add yours. These are the things we don't have good answers to yet._
 
-- What are the biggest real challenges? (To be filled from actual customer conversations,
-  not speculation.)
 -
