@@ -43,7 +43,9 @@ in software.** Closing that loop lets robotics iterate far faster.
 
 **A) The improve/test cycle.** Someone scraps a policy together and it works → they chase a
 customer → they hit edge cases → they fall into an improve/test/improve/test cycle. That's
-where evals start to matter and teams reach for technicians. **This is where we come in.**
+where evals start to matter and teams reach for technicians. Pressure from a customer makes
+companies increasingly sensitive to slight deviations in performance — exactly the small
+deltas that small eval sets can't see. **This is where we come in.**
 
 **B) Data quality analysis.** Egocentric/teleop data companies are everywhere; labs want to
 scale this data but don't know how good it is. Proxies aside, the real test is to **train on
