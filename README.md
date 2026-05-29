@@ -42,6 +42,9 @@ noise; at 100 you can see it. **Bigger, faster, less noisy evals let teams detec
 deltas and converge faster.** That's the bet: more samples → better insight → better
 ideation.
 
+Looking at the loop, evals are **one of the last physical steps that can't yet be automated
+in software.** Closing that loop lets robotics iterate far faster.
+
 ## Second area: data quality analysis
 
 Egocentric/teleop data companies are everywhere; labs want to scale this data but don't
