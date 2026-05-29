@@ -19,7 +19,7 @@ want to take the person out of the loop.
 
 Someone scraps a policy together and it works → they chase a customer → they hit edge cases
 → they fall into an improve/test/improve/test cycle. That's where evals start to matter and
-teams reach for simulation or technicians. **This is where we come in.**
+teams reach for technicians. **This is where we come in.**
 
 ## The approach: simulation + remote teleop
 
