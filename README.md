@@ -7,10 +7,8 @@ line, commit. History is the record of who changed what and why.
 
 ## What we're doing
 
-**The pitch, simply: ease the eval burden through simulation and remote teleop.**
-
-Automate robot policy eval runs so teams get **10x more rollouts, with more variation,
-without a person babysitting them.**
+**The pitch, simply: ease the eval burden through simulation and remote teleop** — so teams
+get **10x more rollouts, with more variation, without a person babysitting them.**
 
 Today evals are manual: a policy runs, the environment is reset, over and over. Smaller
 teams have **researchers** doing this; larger teams closer to production have
