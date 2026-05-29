@@ -33,8 +33,7 @@ before deployment today. So the **short-term solution is remote teleop**: instea
 technician beside the robot, the robot itself is driven remotely to reset the environment
 between rollouts.
 
-It's not one or the other — what we're building is a **combination of simulation and remote
-teleop**, not just a teleop service.
+It's a **combination of simulation and remote teleop**, not just a teleop service.
 
 ## The eval flavor
 
