@@ -50,8 +50,8 @@ it and evaluate the policy** — painful because of (1) retraining cost and (2) 
 
 Individual researchers often run ~30 rollouts for a paper. We do not aim to address that.
 
-We are not a teleop company. We may work with teleop companies, but our focus is **good eval
-coverage**, not operating robots for its own sake.
+We are not a teleop company. We may work with teleop companies, but our focus is **letting
+people evaluate their policies better.**
 
 ## Open challenges
 
