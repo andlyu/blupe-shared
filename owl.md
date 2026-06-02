@@ -21,7 +21,7 @@ Owl Evals
 
 ## Description
 
-Owl is an overnight robot-policy evaluation service. You host the rig and define the task; Owl runs 10x the rollouts unmanned, using simulation plus remote teleop with automated scene resets and safety supervision. You wake up to scored, structured eval results (success rates, per-task breakdowns, failure modes, and regressions vs. your last checkpoint) by morning.
+Owl is an overnight physical evaluation system for robot policies. Our first product, Owl Rig, is an eval-native teleoperation rig that sits around a customer’s existing robot workcell. The robot runs autonomously; Owl provides multi-view sensing, safety supervision, automated scene reset, and remote-assist teleop when the policy fails. The software layer schedules rollout batches, compares checkpoints, detects regressions, and produces structured eval reports by morning: success rates, time-to-completion, failure modes, intervention points, and examples of where the new policy improved or broke.
 
 ## Problem
 
